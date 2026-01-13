@@ -8,7 +8,7 @@ const BackgroundMedia: React.FC<BackgroundMediaProps> = ({ mediaType = 'default'
 
   // HomeLandinger styles remain the same
   const HomeLandingerClasses = `w-full absolute bottom-0 left-0 overflow-hidden ${className}`;
-  const HomeLandingerStyle = { height: '600px' };
+  const HomeLandingerStyle = { height: '500px' };
 
   switch (mediaType) {
     case 'image':
