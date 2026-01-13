@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+* {
+  font-family: var(--font-poppins);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.companyname {
+  @apply text-2xl md:text-3xl font-bold text-black;
+}
+
+
+.black {
+  @apply text-black;
+}
+
+.darkbg {
+  @apply bg-[#000000];
+}
+
+.brightbg {
+  @apply bg-white;
+}
+
+.white {
+  @apply text-white;
+}
+
+.subtext {
+  @apply text-[#5B5B5B]
+}
+
+.headingcolor {
+  @apply text-[#1A1A1A] font-bold;
+}
+
+.textcolor {
+  @apply text-[#1A1A1A];
+}
+
+.darktext {
+  @apply text-white;
+}
+
+.parallelheading {
+  @apply text-4xl sm:text-5xl text-[#1A1A1A] font-bold mb-4 md:mb-0;
+}
+
+.brightparallelheading {
+  @apply text-4xl sm:text-5xl text-[#ffffff] font-bold mb-4 md:mb-0;
+}
+
+.paralleltext {
+  @apply text-lg text-[#1A1A1A] md:max-w-xs
+}
+
+.brightparalleltext {
+  @apply text-lg text-[#f1f1f1] md:max-w-xs
+}
+
+.mainheading {
+  @apply text-[40px] sm:text-[48px] lg:text-[56px] font-bold text-[#1A1A1A];
+}
+
+.brightmainheading {
+  @apply text-[40px] sm:text-[48px] lg:text-[56px] font-bold text-[#ffffff];
+}
+
+.darkmainheading {
+  @apply text-[44px] sm:text-[52px] lg:text-[60px] font-bold text-[#ffffff];
+}
+
+.buttonbg {
+  @apply bg-[#D55900] hover:bg-orange-600 shadow-lg transition duration-300;
+}
+
+.orange {
+  @apply text-[#D55900];
+}
+
+.showcase {
+  @apply text-4xl sm:text-5xl font-medium text-[#1A1A1A];
+}
+
+.showcasetext {
+  @apply text-base font-medium whitespace-nowrap text-[#5B5B5B];
+}
+
+.featureblockheading {
+  @apply text-3xl sm:text-4xl font-bold mb-6 leading-tight;
+}
+
+.featureblocksubhead {
+  @apply text-lg font-semibold mb-2;
+}
+
+.feedbackbutton {
+  @apply border-gray-900 text-gray-900 rounded-full hover:bg-gray-100;
+}
+
+.darkarrowkbutton {
+  @apply border-gray-50 text-gray-50 rounded-full hover:bg-gray-900;
+}
+
+.insightcardtext {
+  @apply text-xl font-extrabold leading-snug mb-1 text-black;
+}
+
+.brightinsightcardtext {
+  @apply text-xl font-extrabold leading-snug mb-1 text-white;
+}
+
+
+.workdatahead {
+  @apply text-black text-sm uppercase font-bold tracking-wider min-w-30;
+}
