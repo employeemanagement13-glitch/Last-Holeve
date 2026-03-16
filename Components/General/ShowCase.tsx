@@ -67,7 +67,7 @@ const IntroSectionMinimal: React.FC<BaseComponentProps> = () => {
                             </motion.p>
 
                             {/* Stats and CTA Row */}
-                            <div className="flex items-center space-x-8 sm:space-x-12">
+                            <div className="flex items-center space-x-8 sm:space-x-12 max-md:flex-wrap max-md:gap-[17px]">
                                 
                                 {/* Stat 1: 460+ Awesome Project */}
                                 <div className="flex flex-col">
