@@ -22,7 +22,7 @@ const IntroSectionMinimal: React.FC<BaseComponentProps> = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.1 }}
-            className="min-h-screen flex items-center justify-center p-4 sm:p-8"
+            className="min-h-screen flex items-center justify-center p-4 sm:p-8 w-full"
         >
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Card-like container */}
